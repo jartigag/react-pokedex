@@ -40,31 +40,55 @@ body {
   width:  300px;
   max-height: 400px;
   background-color: var(--color-grass);
-  border-radius: var(--small);
+  border-radius: var(--spacing-small);
 }
 
 .card-content {
+  /* TODO: flex? with position? */
+  position: relative;
   width:  290px;
   height: 240px;
-  margin-left: var(--xtiny);
-  margin-right: var(--xtiny);
-  margin-bottom: var(--xtiny);
+  margin-left:   var(--spacing-xtiny);
+  margin-right:  var(--spacing-xtiny);
+  margin-bottom: var(--spacing-xtiny);
   background-color: var(--color-white);
-  border-radius: var(--small);
+  border-radius: var(--spacing-small);
+}
+
+.tags-row {
+  display: flex;
+  justify-content: space-evenly; /*TODO: padding 8px */
+  padding: 2px var(--spacing-small);
+}
+
+.tag {
+  height: 20px;
+  line-height: 0; /* this centers the text vertically */
+  font-size: 10px;
+  background-color: magenta;
+  border-radius: var(--spacing-tiny);
+  padding: var(--spacing-tiny);
+  margin-bottom: var(--spacing-mini);
 }
 
 .about {
   color: var(--color-grass);
   text-decoration: none;
+  margin-bottom: var(--spacing-mini); /*FIXME: why not working? */
 }
 
-.tags {
+.measures-row {
   background-color: magenta;
-  border-radius: var(--spacing-tiny);
-  padding: var(--spacing-tiny);
-}
-
-.tags-row {
   display: flex;
   justify-content: space-evenly;
+}
+
+.description {
+  font-size: 10px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin-left:   var(--spacing-base);
+  margin-right:  var(--spacing-base);
+  margin-bottom: var(--spacing-xtiny);
 }

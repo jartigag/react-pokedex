@@ -2,6 +2,8 @@
 
 Design specifications are given in this [Figma project](https://www.figma.com/file/0bOfpmXjQtdZLdjG56FNgp/My-Pokedex)
 
+![](sc.png)
+
 ---
 
 # Getting Started with Create React App

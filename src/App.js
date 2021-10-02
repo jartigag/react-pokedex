@@ -10,15 +10,15 @@ function App() {
         <img className="image" src="" alt=""/>
         <div className="card-content">
         <div class="tags-row">
-          <div className="bold tags">
+          <div className="bold tag">
               <p>Grass</p>
           </div>
-          <div className="bold tags">
+          <div className="bold tag">
               <p>Poison</p>
           </div>
         </div>
         <a className="bold about" href="/#">About</a>
-        <div className="measures">
+        <div className="measures-row">
             <p className="weight">6,9 kg</p>
             <p className="height">0,7 m</p>
         </div>
