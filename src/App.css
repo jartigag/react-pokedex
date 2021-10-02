@@ -68,17 +68,15 @@ body {
 .tags-row {
   display: flex;
   justify-content: space-evenly; /*TODO: padding 8px */
-  padding: 2px var(--spacing-small);
+  margin-bottom: var(--spacing-mini);
 }
 
 .tag {
-  height: 20px;
-  line-height: 0; /* this centers the text vertically */
+  display: flex;
+  padding: 2px var(--spacing-small);
   font-size: 10px;
   background-color: magenta;
   border-radius: var(--spacing-tiny);
-  padding: var(--spacing-tiny);
-  margin-bottom: var(--spacing-mini);
 }
 
 .about {
