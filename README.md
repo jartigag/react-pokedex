@@ -1,3 +1,9 @@
+## Design Reference
+
+Design specifications are given in this [Figma project](https://www.figma.com/file/0bOfpmXjQtdZLdjG56FNgp/My-Pokedex)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
