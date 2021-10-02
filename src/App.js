@@ -7,7 +7,7 @@ function App() {
           <h1 className="bold name">Bulbasaur</h1>
           <h2 className="bold number">#001</h2>
         </div>
-        <img className="image" src="" alt=""/>
+        <img className="image" src="img/bulbasaur.png" alt=""/>
         <div className="card-content">
         <div class="tags-row">
           <div className="bold tag">

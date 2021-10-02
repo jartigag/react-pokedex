@@ -27,11 +27,6 @@ body {
   color: white;
 }
 
-.title {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .card {
   text-align: center;
   display: flex;
@@ -41,10 +36,25 @@ body {
   max-height: 400px;
   background-color: var(--color-grass);
   border-radius: var(--spacing-small);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image {
+  max-width: 150px; /* FIXME */
+  margin: auto;
+  position: relative;
+  top: 50px;
+  z-index: 1;
 }
 
 .card-content {
   /* TODO: flex? with position? */
+  padding: 50px 0 0 0;
   position: relative;
   width:  290px;
   height: 240px;
