@@ -1,0 +1,70 @@
+@import-normalize; /* bring in normalize.css styles */
+
+:root {
+  /* Spacing: */
+  --spacing-xtiny: 4px;
+  --spacing-tiny: 8px;
+  --spacing-small: 12px;
+  --spacing-mini: 16px;
+  --spacing-base: 24px;
+  --spacing-medium: 32px;
+  --spacing-large: 48px;
+
+  /* Colors: */
+  --color-background: #f7f7f7;
+  --color-white: #ffffff;
+  --color-grass: #74cb48;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: var(--color-background);
+}
+
+.bold {
+  font-weight: 700;
+  color: white;
+}
+
+.title {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:  300px;
+  max-height: 400px;
+  background-color: var(--color-grass);
+  border-radius: var(--small);
+}
+
+.card-content {
+  width:  290px;
+  height: 240px;
+  margin-left: var(--xtiny);
+  margin-right: var(--xtiny);
+  margin-bottom: var(--xtiny);
+  background-color: var(--color-white);
+  border-radius: var(--small);
+}
+
+.about {
+  color: var(--color-grass);
+  text-decoration: none;
+}
+
+.tags {
+  background-color: magenta;
+  border-radius: var(--spacing-tiny);
+  padding: var(--spacing-tiny);
+}
+
+.tags-row {
+  display: flex;
+  justify-content: space-evenly;
+}
