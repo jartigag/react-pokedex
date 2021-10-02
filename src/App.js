@@ -8,8 +8,8 @@ function App() {
           <h2 className="bold number">#001</h2>
         </div>
         <img className="image" src="img/bulbasaur.png" alt=""/>
-        <div className="card-content">
-        <div class="tags-row">
+        <div className="card__content">
+        <div class="tags">
           <div className="bold tag">
               <span>Grass</span>
           </div>
@@ -18,11 +18,11 @@ function App() {
           </div>
         </div>
         <a className="bold about" href="/#">About</a>
-        <div className="measures-row">
+        <div className="measures">
             <img src="icon/weight_icon.svg" alt="" />
-            <span className="weight">6,9 kg <span class="measure-name">Weight</span></span>
+            <span className="weight">6,9 kg <span class="measure__name">Weight</span></span>
             <img src="icon/height_icon.svg" alt="" />
-            <span className="height">0,7 m <span class="measure-name">Height</span></span>
+            <span className="height">0,7 m <span class="measure__name">Height</span></span>
         </div>
         <div className="description">
             <p>There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</p>

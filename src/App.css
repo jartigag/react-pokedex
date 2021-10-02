@@ -51,7 +51,7 @@ body {
   z-index: 1;
 }
 
-.card-content {
+.card__content {
   /* TODO: flex? with position? */
   padding: 50px 0 0 0;
   position: relative;
@@ -64,7 +64,7 @@ body {
   border-radius: var(--spacing-small);
 }
 
-.tags-row {
+.tags {
   display: flex;
   justify-content: space-evenly; /*TODO: padding 8px */
   margin-bottom: var(--spacing-mini);
@@ -84,13 +84,13 @@ body {
   margin-bottom: var(--spacing-mini); /*FIXME: why not working? */
 }
 
-.measures-row {
+.measures {
   background-color: magenta;
   display: flex;
   justify-content: space-evenly;
 }
 
-.measure-name {
+.measure__name {
   font-size: 8px;
 }
 
