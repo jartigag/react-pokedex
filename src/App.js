@@ -20,13 +20,17 @@ function App() {
         <a className="bold card__about" href="/#">About</a>
         <div className="card__measures">
             <div className="card__measure">
-                <img src="icon/weight_icon.svg" alt="" />
-                <p className="measure__value">6,9 kg</p>
+                <div className="measure__data">
+                    <img src="icon/weight_icon.svg" alt="" />
+                    <p className="measure__value">6,9 kg</p>
+                </div>
                 <span class="measure__name">Weight</span>
             </div>
             <div className="card__measure">
-                <img src="icon/height_icon.svg" alt="" />
-                <p className="measure__value">0,7 m</p>
+                <div className="measure__data">
+                    <img src="icon/height_icon.svg" alt="" />
+                    <p className="measure__value">0,7 m</p>
+                </div>
                 <span class="measure__name">Height</span>
             </div>
         </div>

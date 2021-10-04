@@ -39,7 +39,7 @@ body {
   max-height: 400px;
   background-color: var(--color-grass);
   border-radius: var(--spacing-small);
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.19);
 }
 
 .card__header {
@@ -59,7 +59,6 @@ body {
 }
 
 .card__image {
-  max-width: 150px; /* FIXME */
   margin: auto;
   position: relative;
   top: 50px;
@@ -109,11 +108,9 @@ body {
 .card__about {
   color: var(--color-grass);
   text-decoration: none;
-  margin-bottom: var(--spacing-mini); /*FIXME: why not working? */
 }
 
 .card__measures {
-  background-color: magenta;
   display: flex;
   justify-content: space-evenly;
 }
@@ -122,11 +119,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: var(--spacing-mini);
+}
+
+/*TODO: measure line separator */
+
+.measure__data {
+  display: flex;
+  padding: var(--spacing-mini);
 }
 
 .measure__value {
   font-size: 10px;
   line-height: 16px;
+  padding-left: var(--spacing-tiny);
 }
 
 .measure__name {
@@ -136,9 +142,8 @@ body {
 
 .card__description {
   font-size: 10px;
+  line-height: 16px;
   text-align: justify;
-  position: absolute;
-  bottom: 0;
   margin-left:   var(--spacing-base);
   margin-right:  var(--spacing-base);
   margin-bottom: var(--spacing-xtiny);
