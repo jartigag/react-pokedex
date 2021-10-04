@@ -14,6 +14,9 @@
   --color-white: #ffffff;
   --color-grass: #74cb48;
   --color-poisson: #a43e9e;
+
+  --color-dark-gray: #212121;
+  --color-medium-gray: #666666;
 }
 
 body {
@@ -78,7 +81,7 @@ body {
 
 .card__tags {
   display: flex;
-  justify-content: space-evenly; /*TODO: padding 8px */
+  justify-content: center;
   margin-bottom: var(--spacing-mini);
 }
 
@@ -90,6 +93,10 @@ body {
 
 .bg-poisson {
     background-color: var(--color-poisson);
+}
+
+.card__tag + .card__tag {
+  margin-left: var(--spacing-mini);
 }
 
 .card__tag {
@@ -111,8 +118,20 @@ body {
   justify-content: space-evenly;
 }
 
+.card__measure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.measure__value {
+  font-size: 10px;
+  line-height: 16px;
+}
+
 .measure__name {
   font-size: 8px;
+  color: var(--color-medium-gray);
 }
 
 .card__description {
