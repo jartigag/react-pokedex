@@ -1,0 +1,32 @@
+:root {
+  /* Spacing: */
+  --spacing-xtiny:   4px;
+  --spacing-tiny:    8px;
+  --spacing-small:  12px;
+  --spacing-mini:   16px;
+  --spacing-base:   24px;
+  --spacing-medium: 32px;
+  --spacing-large:  48px;
+
+  /* Font sizes: */
+  --font-size-xtiny:   8px;
+  --font-size-tiny:   10px;
+  --font-size-small:  12px;
+  --font-size-medium: 16px;
+  --font-size-big:    24px;
+
+  /* Line heights: */
+  --line-height-small:  12px;
+  --line-height-medium: 16px;
+  --line-height-big:    32px;
+
+  /* Colors: */
+  --color-background: #f7f7f7;
+  --color-white: #ffffff;
+  --color-grass: #74cb48;
+  --color-poisson: #a43e9e;
+
+  --color-dark-gray: #212121;
+  --color-medium-gray: #666666;
+}
+
