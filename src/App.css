@@ -13,6 +13,7 @@
   --color-background: #f7f7f7;
   --color-white: #ffffff;
   --color-grass: #74cb48;
+  --color-poisson: #a43e9e;
 }
 
 body {
@@ -38,12 +39,23 @@ body {
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.title {
+.card__header {
+  margin-top: var(--spacing-base);
   display: flex;
   justify-content: space-evenly;
 }
 
-.image {
+.card__name {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.card__number {
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.card__image {
   max-width: 150px; /* FIXME */
   margin: auto;
   position: relative;
@@ -64,27 +76,36 @@ body {
   border-radius: var(--spacing-small);
 }
 
-.tags {
+.card__tags {
   display: flex;
   justify-content: space-evenly; /*TODO: padding 8px */
   margin-bottom: var(--spacing-mini);
 }
 
-.tag {
+/*TODO: can this be extracted as .bg-$type { background-color: var(--color-$type); } ? */
+
+.bg-grass {
+    background-color: var(--color-grass);
+}
+
+.bg-poisson {
+    background-color: var(--color-poisson);
+}
+
+.card__tag {
   display: flex;
   padding: 2px var(--spacing-small);
   font-size: 10px;
-  background-color: magenta;
   border-radius: var(--spacing-tiny);
 }
 
-.about {
+.card__about {
   color: var(--color-grass);
   text-decoration: none;
   margin-bottom: var(--spacing-mini); /*FIXME: why not working? */
 }
 
-.measures {
+.card__measures {
   background-color: magenta;
   display: flex;
   justify-content: space-evenly;
@@ -94,7 +115,7 @@ body {
   font-size: 8px;
 }
 
-.description {
+.card__description {
   font-size: 10px;
   text-align: justify;
   position: absolute;
