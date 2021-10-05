@@ -4,6 +4,18 @@ body {
   background-color: var(--color-background);
 }
 
+@media (max-width: 768px) { /* @mobile, @tablet */
+  body {
+      margin: 0 var(--spacing-base);
+  }
+}
+
+@media (min-width: 769px) { /* @desktop */
+  body {
+      margin: 0 var(--spacing-large);
+  }
+}
+
 .bold {
   font-weight: 700;
   color: white;
@@ -39,18 +51,14 @@ body {
 }
 
 .card__image {
-  min-width: 150px;
-  margin: auto;
-  position: relative;
-  top: var(--spacing-mini);
+  align-self: center; /* flex-direction: column -> align vertical */
   z-index: 1;
 }
 
 .card__content {
-  /* TODO: flex? with position? */
+  margin-top: -50px;
+  padding-top: 50px;
   position: relative; /*FIXME */
-  width:  290px;
-  height: 240px;
   margin-left:   var(--spacing-xtiny);
   margin-right:  var(--spacing-xtiny);
   margin-bottom: var(--spacing-xtiny);
@@ -63,8 +71,6 @@ body {
   justify-content: center;
   margin-bottom: var(--spacing-mini);
 }
-
-/*TODO: can this be extracted as .bg-$type { background-color: var(--color-$type); } ? */
 
 .bg-grass {
     background-color: var(--color-grass);
@@ -92,21 +98,26 @@ body {
 
 .card__measures {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
 }
 
 .card__measure {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   padding: var(--spacing-mini);
+  border-right: 1px solid var(--color-light-gray);
 }
 
-/*TODO: measure line separator */
+.card__measure:last-child {
+  border-right: none;
+}
 
 .measure__data {
   display: flex;
-  padding: var(--spacing-mini);
+  padding-bottom: var(--spacing-tiny);
 }
 
 .measure__value {
